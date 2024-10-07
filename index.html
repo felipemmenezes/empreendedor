@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Teste Perfil Empreendedor</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Perfil Empreendedor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        label {
+            margin-right: 10px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Teste de Perfil Empreendedor</h1>
+
+<p>
+    Este teste foi desenvolvido para ajudá-lo a entender melhor seu perfil empreendedor. Responda a cada uma das 33 afirmações de acordo com sua realidade, utilizando uma escala de 1 a 5, onde 1 significa que você discorda fortemente e 5 significa que você concorda totalmente. Ao final, clique no botão "Gerar Resultado" para saber como você se encaixa no perfil empreendedor.
+</p>
+
+<form id="empreendedorForm">
+    <!-- Perguntas de 1 a 33 -->
+    <div class="question">
+        <label>1. Eu gosto de buscar novas oportunidades.</label><br>
+        <input type="radio" name="q1" value="1"> 1
+        <input type="radio" name="q1" value="2"> 2
+        <input type="radio" name="q1" value="3"> 3
+        <input type="radio" name="q1" value="4"> 4
+        <input type="radio" name="q1" value="5"> 5
+    </div>
+
+    <div class="question">
+        <label>2. Sou otimista quanto ao meu futuro.</label><br>
+        <input type="radio" name="q2" value="1"> 1
+        <input type="radio" name="q2" value="2"> 2
+        <input type="radio" name="q2" value="3"> 3
+        <input type="radio" name="q2" value="4"> 4
+        <input type="radio" name="q2" value="5"> 5
+    </div>
+
+    <div class="question">
+        <label>3. Sou capaz de identificar oportunidades e agir sobre elas.</label><br>
+        <input type="radio" name="q3" value="1"> 1
+        <input type="radio" name="q3" value="2"> 2
+        <input type="radio" name="q3" value="3"> 3
+        <input type="radio" name="q3" value="4"> 4
+        <input type="radio" name="q3" value="5"> 5
+    </div>
+
+    <div class="question">
+        <label>4. Gosto de tomar a iniciativa em situações novas.</label><br>
+        <input type="radio" name="q4" value="1"> 1
+        <input type="radio" name="q4" value="2"> 2
+        <input type="radio" name="q4" value="3"> 3
+        <input type="radio" name="q4" value="4"> 4
+        <input type="radio" name="q4" value="5"> 5
+    </div>
+
+    <div class="question">
+        <label>5. Não tenho medo de assumir riscos.</label><br>
+        <input type="radio" name="q5" value="1"> 1
+        <input type="radio" name="q5" value="2"> 2
+        <input type="radio" name="q5" value="3"> 3
+        <input type="radio" name="q5" value="4"> 4
+        <input type="radio" name="q5" value="5"> 5
+    </div>
+
+    <div class="question">
+        <label>6. Eu consigo lidar bem com situações de incerteza.</label><br>
+        <input type="radio" name="q6" value="1"> 1
+        <input type="radio" name="q6" value="2"> 2
+        <input type="radio" name="q6" value="3"> 3
+        <input type="radio" name="q6" value="4"> 4
+        <input type="radio" name="q6" value="5"> 5
+    </div>
+
+    <div class="question">
+        <label>7. Sou criativo e gosto de inovar.</label><br>
+        <input type="radio" name="q7" value="1"> 1
+        <input type="radio" name="q7" value="2"> 2
+        <input type="radio" name="q7" value="3"> 3
+        <input type="radio" name="q7" value="4"> 4
+        <input type="radio" name="q7" value="5"> 5
+    </div>
+
+    <div class="question">
+        <label>8. Consigo delegar tarefas com confiança.</label><br>
+        <input type="radio" name="q8" value="1"> 1
+        <input type="radio" name="q8" value="2"> 2
+        <input type="radio" name="q8" value="3"> 3
+        <input type="radio" name="q8" value="4"> 4
+        <input type="radio" name="q8" value="5"> 5
+    </div>
+
+    <div class="question">
+        <label>9. Tenho facilidade para trabalhar em equipe.</label><br>
+        <input type="radio" name="q9" value="1"> 1
+        <input type="radio" name="q9" value="2"> 2
+        <input type="radio" name="q9" value="3"> 3
+        <input type="radio" name="q9" value="4"> 4
+        <input type="radio" name="q9" value="5"> 5
+    </div>
+
+    <div class="question">
+        <label>10. Consigo persistir diante de adversidades.</label><br>
+        <input type="radio" name="q10" value="1"> 1
+        <input type="radio" name="q10" value="2"> 2
+        <input type="radio" name="q10" value="3"> 3
+        <input type="radio" name="q10" value="4"> 4
+        <input type="radio" name="q10" value="5"> 5
+    </div>
+
+    <!-- Continuar assim até a pergunta 33 -->
+  
+      <div class="question">
+        <label>11. Tenho facilidade para tomar decisões rapidamente.</label><br>
+        <input type="radio" name="q11" value="1"> 1
+        <input type="radio" name="q11" value="2"> 2
+        <input type="radio" name="q11" value="3"> 3
+        <input type="radio" name="q11" value="4"> 4
+        <input type="radio" name="q11" value="5"> 5
+    </div>
+
+      <div class="question">
+        <label>12. Sou flexível e me adapto bem a mudanças.</label><br>
+        <input type="radio" name="q12" value="1"> 1
+        <input type="radio" name="q12" value="2"> 2
+        <input type="radio" name="q12" value="3"> 3
+        <input type="radio" name="q12" value="4"> 4
+        <input type="radio" name="q12" value="5"> 5
+    </div>
+
+      <div class="question">
+        <label>13. Eu estabeleço metas claras e me empenho para alcançá-las.</label><br>
+        <input type="radio" name="q13" value="1"> 1
+        <input type="radio" name="q13" value="2"> 2
+        <input type="radio" name="q13" value="3"> 3
+        <input type="radio" name="q13" value="4"> 4
+        <input type="radio" name="q13" value="5"> 5
+    </div>
+
+      <div class="question">
+        <label>14. Gosto de fazer coisas novas e diferentes.</label><br>
+        <input type="radio" name="q14" value="1"> 1
+        <input type="radio" name="q14" value="2"> 2
+        <input type="radio" name="q14" value="3"> 3
+        <input type="radio" name="q14" value="4"> 4
+        <input type="radio" name="q14" value="5"> 5
+    </div>
+
+<div class="question">
+    <label>15. Eu busco feedback regularmente para melhorar meu desempenho.</label><br>
+    <input type="radio" name="q15" value="1"> 1
+    <input type="radio" name="q15" value="2"> 2
+    <input type="radio" name="q15" value="3"> 3
+    <input type="radio" name="q15" value="4"> 4
+    <input type="radio" name="q15" value="5"> 5
+</div>
+
+<div class="question">
+    <label>16. Eu me adapto facilmente a mudanças.</label><br>
+    <input type="radio" name="q16" value="1"> 1
+    <input type="radio" name="q16" value="2"> 2
+    <input type="radio" name="q16" value="3"> 3
+    <input type="radio" name="q16" value="4"> 4
+    <input type="radio" name="q16" value="5"> 5
+</div>
+
+<div class="question">
+    <label>17. Eu tenho uma visão clara do que quero alcançar.</label><br>
+    <input type="radio" name="q17" value="1"> 1
+    <input type="radio" name="q17" value="2"> 2
+    <input type="radio" name="q17" value="3"> 3
+    <input type="radio" name="q17" value="4"> 4
+    <input type="radio" name="q17" value="5"> 5
+</div>
+
+<div class="question">
+    <label>18. Eu sou capaz de motivar outras pessoas a alcançarem seus objetivos.</label><br>
+    <input type="radio" name="q18" value="1"> 1
+    <input type="radio" name="q18" value="2"> 2
+    <input type="radio" name="q18" value="3"> 3
+    <input type="radio" name="q18" value="4"> 4
+    <input type="radio" name="q18" value="5"> 5
+</div>
+
+<div class="question">
+    <label>19. Eu analiso riscos e tomo decisões informadas.</label><br>
+    <input type="radio" name="q19" value="1"> 1
+    <input type="radio" name="q19" value="2"> 2
+    <input type="radio" name="q19" value="3"> 3
+    <input type="radio" name="q19" value="4"> 4
+    <input type="radio" name="q19" value="5"> 5
+</div>
+
+<div class="question">
+    <label>20. Eu aprendo com meus erros e busco melhorar continuamente.</label><br>
+    <input type="radio" name="q20" value="1"> 1
+    <input type="radio" name="q20" value="2"> 2
+    <input type="radio" name="q20" value="3"> 3
+    <input type="radio" name="q20" value="4"> 4
+    <input type="radio" name="q20" value="5"> 5
+</div>
+
+<div class="question">
+    <label>21. Eu busco inspiração em outras pessoas e projetos.</label><br>
+    <input type="radio" name="q21" value="1"> 1
+    <input type="radio" name="q21" value="2"> 2
+    <input type="radio" name="q21" value="3"> 3
+    <input type="radio" name="q21" value="4"> 4
+    <input type="radio" name="q21" value="5"> 5
+</div>
+
+<div class="question">
+    <label>22. Eu tenho habilidades para negociar e fechar acordos.</label><br>
+    <input type="radio" name="q22" value="1"> 1
+    <input type="radio" name="q22" value="2"> 2
+    <input type="radio" name="q22" value="3"> 3
+    <input type="radio" name="q22" value="4"> 4
+    <input type="radio" name="q22" value="5"> 5
+</div>
+
+<div class="question">
+    <label>23. Eu estou disposto a aprender coisas novas e a me desenvolver.</label><br>
+    <input type="radio" name="q23" value="1"> 1
+    <input type="radio" name="q23" value="2"> 2
+    <input type="radio" name="q23" value="3"> 3
+    <input type="radio" name="q23" value="4"> 4
+    <input type="radio" name="q23" value="5"> 5
+</div>
+
+<div class="question">
+    <label>24. Eu tenho um plano de ação para alcançar meus objetivos.</label><br>
+    <input type="radio" name="q24" value="1"> 1
+    <input type="radio" name="q24" value="2"> 2
+    <input type="radio" name="q24" value="3"> 3
+    <input type="radio" name="q24" value="4"> 4
+    <input type="radio" name="q24" value="5"> 5
+</div>
+
+<div class="question">
+    <label>25. Eu sou persistente e não desisto facilmente.</label><br>
+    <input type="radio" name="q25" value="1"> 1
+    <input type="radio" name="q25" value="2"> 2
+    <input type="radio" name="q25" value="3"> 3
+    <input type="radio" name="q25" value="4"> 4
+    <input type="radio" name="q25" value="5"> 5
+</div>
+
+  <div class="question">
+    <label>26. Eu busco construir relacionamentos positivos e de confiança.</label><br>
+    <input type="radio" name="q26" value="1"> 1
+    <input type="radio" name="q26" value="2"> 2
+    <input type="radio" name="q26" value="3"> 3
+    <input type="radio" name="q26" value="4"> 4
+    <input type="radio" name="q26" value="5"> 5
+</div>
+
+<div class="question">
+    <label>27. Eu tenho facilidade em trabalhar em equipe.</label><br>
+    <input type="radio" name="q27" value="1"> 1
+    <input type="radio" name="q27" value="2"> 2
+    <input type="radio" name="q27" value="3"> 3
+    <input type="radio" name="q27" value="4"> 4
+    <input type="radio" name="q27" value="5"> 5
+</div>
+
+<div class="question">
+    <label>28. Eu sou flexível e consigo me adaptar a diferentes ambientes de trabalho.</label><br>
+    <input type="radio" name="q28" value="1"> 1
+    <input type="radio" name="q28" value="2"> 2
+    <input type="radio" name="q28" value="3"> 3
+    <input type="radio" name="q28" value="4"> 4
+    <input type="radio" name="q28" value="5"> 5
+</div>
+
+<div class="question">
+    <label>29. Eu valorizo a diversidade e a inclusão em ambientes de trabalho.</label><br>
+    <input type="radio" name="q29" value="1"> 1
+    <input type="radio" name="q29" value="2"> 2
+    <input type="radio" name="q29" value="3"> 3
+    <input type="radio" name="q29" value="4"> 4
+    <input type="radio" name="q29" value="5"> 5
+</div>
+
+<div class="question">
+    <label>30. Eu estou aberto a críticas construtivas.</label><br>
+    <input type="radio" name="q30" value="1"> 1
+    <input type="radio" name="q30" value="2"> 2
+    <input type="radio" name="q30" value="3"> 3
+    <input type="radio" name="q30" value="4"> 4
+    <input type="radio" name="q30" value="5"> 5
+</div>
+
+<div class="question">
+    <label>31. Eu sou proativo e busco soluções antes que os problemas aconteçam.</label><br>
+    <input type="radio" name="q31" value="1"> 1
+    <input type="radio" name="q31" value="2"> 2
+    <input type="radio" name="q31" value="3"> 3
+    <input type="radio" name="q31" value="4"> 4
+    <input type="radio" name="q31" value="5"> 5
+</div>
+
+<div class="question">
+    <label>32. Eu estou comprometido em alcançar resultados positivos em meus projetos.</label><br>
+    <input type="radio" name="q32" value="1"> 1
+    <input type="radio" name="q32" value="2"> 2
+    <input type="radio" name="q32" value="3"> 3
+    <input type="radio" name="q32" value="4"> 4
+    <input type="radio" name="q32" value="5"> 5
+</div>
+
+  
+
+    <div class="question">
+        <label>33. Eu sou determinado(a) a fazer minhas ideias se tornarem realidade.</label><br>
+        <input type="radio" name="q33" value="1"> 1
+        <input type="radio" name="q33" value="2"> 2
+        <input type="radio" name="q33" value="3"> 3
+        <input type="radio" name="q33" value="4"> 4
+        <input type="radio" name="q33" value="5"> 5
+    </div>
+
+    <button type="button" onclick="calcularResultado()">Gerar Resultado</button>
+</form>
+
+<div id="result"></div>
+
+<script>
+    function calcularResultado() {
+        const form = document.forms['empreendedorForm'];
+        let total = 0;
+        let numPerguntas = 33; // número total de perguntas
+        let todasRespondidas = true;
+
+        // Validar se todas as perguntas foram respondidas
+        for (let i = 1; i <= numPerguntas; i++) {
+            const radios = form['q' + i];
+            let respondeu = false;
+            for (let radio of radios) {
+                if (radio.checked) {
+                    total += parseInt(radio.value);
+                    respondeu = true;
+                }
+            }
+            if (!respondeu) {
+                todasRespondidas = false;
+                break;
+            }
+        }
+
+        if (!todasRespondidas) {
+            document.getElementById('result').innerHTML = "Por favor, responda todas as perguntas antes de gerar o resultado.";
+            return;
+        }
+<!-- partial -->
+  
+</body>
+</html>
